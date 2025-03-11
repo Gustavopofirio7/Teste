@@ -1,0 +1,163 @@
+/*cor de fundo*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #5d87c9,#175692,#004680); /* Gradiente que simula efeito grafite */
+    background-size: 500% 100%; /* Tamanho do gradiente */
+    animation: degrade-animado 5s infinite alternate;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+  }
+  /*degrade animado*/
+@keyframes degrade-animado{
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+/*efeito grafite no texto*/
+h, p {
+font-family: Arial, Helvetica, sans-serif;
+color: #ffffff;
+text-shadow: 
+2px 2px 5px rgba(0, 0, 0, 0.5),   /* Sombras para simular efeito sujo */
+0px 0px 15px rgba(19, 18, 18, 0.6); /* Brilho vermelho */
+}
+/* Adicionando mais um toque grafite ao texto */
+h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+  }
+/*imagem principal */
+img {
+width: 90%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+  max-width: 150px;
+  border-radius: 100px;
+}
+/*Texto de incicio*/
+.inicio {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .resumo {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+    .projetos {
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        color: #000000;
+        font-weight: bold;
+        text-align: left; /* Alinha o texto à esquerda */
+        text-shadow: none; /* Remove o efeito de sombra */
+    }
+        /* Container para os cards */
+.container2 {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os cards */
+    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite quebrar a linha se não houver espaço suficiente */
+  }
+  
+  /* Estilo dos cards */
+  .card1, .card2, .card3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: none;
+    background-color:rgba(0, 0, 0, 0); /* Cor de fundo para os cards transparente */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Largura dos cards */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+    box-sizing: border-box; /* Para garantir que padding e borda sejam considerados no tamanho total */
+  }
+  
+  /* Estilo da imagem (redonda e com efeito de transição) */
+  .card1 img, .card2 img, .card3 img {
+    width: 120px; /* Tamanho da imagem */
+    height: 120px; /* Mantém a imagem quadrada */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-bottom: 20px; /* Espaço entre a imagem e o texto */
+    transition: transform 0.3s ease; /* Transição para o efeito de movimento */
+  }
+  
+  /* Efeito de movimentação da imagem quando o mouse passa em cima */
+  .card1 img:hover, .card2 img:hover, .card3 img:hover {
+    transform: translateY(-10px); /* Move a imagem para cima quando o mouse passa em cima */
+  }
+  
+  /* Estilo do texto dentro do card */
+  .card1 p, .card2 p, .card3 p {
+    margin: 0;
+    padding: 0;
+  }
+/*estilo de fonte redes sociais*/
+  .RD {
+    font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        text-align: left; /* Alinha o texto à esquerda */
+        text-shadow: none; /* Remove o efeito de sombra */
+    }
+
+  
+  /* Definindo o layout da página */
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% da altura da tela */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Colocando o texto no final da página */
+  .footer {
+    width: 100%;
+    position: fixed; /* Fixa no final da tela */
+    bottom: 0; /* Mantém no final */
+    left: 0; /* Começa da esquerda */
+    text-align: center; /* Centraliza o texto dentro do footer */
+    background-color: rgba(0, 0, 0, 0); /* Fundo totalmente transparente */
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* Container para as imagens das redes sociais */
+.social-container3 {
+    display: flex; /* Alinha as imagens em linha */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-top: 50px; /* Espaçamento superior */
+  }
+  
+  /* Estilo das imagens das redes sociais */
+  .profile-img {
+    width: 50px; /* Tamanho fixo das imagens */
+    height: 50px; /* Tamanho fixo das imagens */
+    border-radius: 50%; /* Deixa as imagens circulares */
+    transition: transform 0.3s ease; /* Efeito suave de transformação */
+  }
+  
+  /* Efeito de movimento ao passar o mouse */
+.profile-img:hover {
+  transform: scale(1.1); /* Aumenta um pouco a imagem */
+}
+
+  
